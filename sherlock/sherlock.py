@@ -313,7 +313,8 @@ def sherlock(username, site_data, query_notify,
                                  proxies=proxies,
                                  allow_redirects=allow_redirects,
                                  timeout=timeout,
-                                 json=request_payload
+                                 json=request_payload,
+                                 verify=False
                                  )
             else:
                 future = request(url=url_probe, headers=headers,
